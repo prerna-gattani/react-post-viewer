@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { createRoot } from 'react-dom/client'; // React 18 method
+import { HashRouter } from 'react-router-dom'; // Use HashRouter for GitHub Pages
 import App from './App';
 import './styles.css'; // Import the CSS file
 
-ReactDOM.render(
-  <BrowserRouter>
+const container = document.getElementById('root');
+const root = createRoot(container); // Use createRoot
+root.render(
+  <HashRouter>
     <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+  </HashRouter>
 );
