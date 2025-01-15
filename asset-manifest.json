@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-post-viewer/static/css/main.dcbff63c.css",
+    "main.js": "/react-post-viewer/static/js/main.44505449.js",
+    "index.html": "/react-post-viewer/index.html",
+    "main.dcbff63c.css.map": "/react-post-viewer/static/css/main.dcbff63c.css.map",
+    "main.44505449.js.map": "/react-post-viewer/static/js/main.44505449.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcbff63c.css",
+    "static/js/main.44505449.js"
+  ]
+}
