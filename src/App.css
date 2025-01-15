@@ -1,0 +1,37 @@
+body {
+  background-color: #f0f8ff; /* Light blue shade */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  border: none;
+  padding: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #e7f1ff; /* Light blue highlight */
+}
+
+.text-primary {
+  color: #0056b3 !important; /* Stronger blue */
+}
+
+.btn-outline-primary {
+  border-color: #007BFF;
+  color: #007BFF;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
