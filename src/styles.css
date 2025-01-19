@@ -15,7 +15,7 @@
     background-color: var(--light-bg-color);
     color: var(--dark-bg-color);
     margin: 0;
-    padding: 0;
+    padding: 0 16px;
   }
   
   /* Header */
@@ -25,6 +25,7 @@
     padding: var(--padding);
     text-align: center;
     border-radius: var(--border-radius);
+    margin: 16px 0;
   }
   
   header h1 {
@@ -55,6 +56,7 @@
     padding: var(--padding);
     margin-bottom: 20px;
     transition: transform 0.3s ease;
+    margin: 30px 50px;
   }
   
   .card:hover {
@@ -74,6 +76,8 @@
   /* Container for content */
   .container {
     padding: 20px;
+    max-width: 1000px; /* Limit the width of the container */
+    margin: 20px auto; /* Center the container horizontally */
   }
   
   .list-item {
@@ -86,3 +90,30 @@
     background-color: var(--light-bg-color);
   }
   
+  /* Light Mode Styles */
+.light-mode {
+  background-color: #f4f4f4;
+  color: #2c3e50;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* Adjusting button colors for dark mode */
+.dark-mode .btn-outline-primary {
+  border-color: #2980b9;
+  color: #2980b9;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+/* Header in Dark Mode */
+.dark-mode header {
+  background-color: #2980b9;
+}

@@ -1,13 +1,18 @@
+// src/index.js
 import React from 'react';
-import { createRoot } from 'react-dom/client'; // React 18 method
-import { HashRouter } from 'react-router-dom'; // Use HashRouter for GitHub Pages
+import { createRoot } from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
 import App from './App';
-import './styles.css'; // Import the CSS file
+import { ThemeProvider } from './ThemeContext';  // Import ThemeProvider
+import './styles.css';
 
 const container = document.getElementById('root');
-const root = createRoot(container); // Use createRoot
+const root = createRoot(container);
+
 root.render(
-  <HashRouter>
-    <App />
-  </HashRouter>
+  <ThemeProvider>  {/* Wrap App with ThemeProvider */}
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </ThemeProvider>
 );
